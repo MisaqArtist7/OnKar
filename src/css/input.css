@@ -102,4 +102,20 @@
   pointer-events: none; 
 }
 
+.dropdown__item {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);  
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; 
+}
+
+.dropdown__menu:hover .dropdown__item {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0); 
+  pointer-events: auto; 
+}
+
+
 
