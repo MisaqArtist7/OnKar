@@ -8,7 +8,7 @@
 @layer base {  
   body {
     overflow-x: hidden;
-    background-color: #ECF2F7; /* FBF3F0 */
+    background-color: #E9F2FF; /* FBF3F0  ECF2F7*/
   }
   * {
     margin: 0;
@@ -87,11 +87,12 @@
   --shadow-Main: 0 0 7px 0px rgb(55 55 55 / 23%);
 }
 
-.liniear {
+/* Header styles */
+.header__content--adivce {
   position: relative;
 }
 
-.liniear::before {
+.header__content--adivce::before {
   content: '';
   position: absolute;
   background: url('../public/images/frame.png');
@@ -117,5 +118,8 @@
   pointer-events: auto; 
 }
 
+.header__service-link:hover, .header__menu-link:hover{
+    color: var(--primaryColor);
+}
 
 
