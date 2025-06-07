@@ -102,7 +102,19 @@
   filter: blur(0.5px);
   pointer-events: none; 
 }
-
+.footer__section {
+  position: relative;
+}
+.footer__section::before{
+  content: '';
+  position: absolute;
+  background: url('/public/images/frame.png');
+  background-position: center;
+  background-size: contain;
+  inset: 0;
+  filter: opacity(0.1);
+  pointer-events: none; 
+}
 .dropdown__item {
   visibility: hidden;
   opacity: 0;
