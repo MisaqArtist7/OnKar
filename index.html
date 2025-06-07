@@ -7,8 +7,9 @@
   <title>OnKar</title>
 </head> 
 <body>
-  <header class="header h-20 flex-row-center bg-white shadow-md container mt-7 rounded-xs">
-    <nav class="header__nav flex items-center justify-between w-full relative">
+  <!-- Header section -->
+  <header class="header flex-col justify-center">
+    <nav class="header__nav flex items-center shadow-md container mt-7 rounded-xs h-20 bg-white justify-between w-full relative">
 
       <!-- لوگوی سایت -->
       <a href="/index.html" class="header__logo font-black text-2xl text-[var(--primaryColor)]">OnKar</a>
@@ -110,10 +111,36 @@
       </div>
 
     </nav>
+
+<section class="header__content container py-11 flex justify-between items-center">
+
+  <!-- بخش متن سمت راست -->
+  <div class="header__content-text w-1/2">
+    <div class="header__content-text-box">
+      <h1 class="header__content-title text-3xl font-bold mb-4">
+        خدمات طراحی گرافیک، وب‌سایت و سئو برای رشد کسب‌وکار شما
+      </h1>
+      <p class="header__content-description text-base text-gray-700 mb-6 leading-relaxed text-justify">
+        تیم ما با تجربه‌ای گسترده در زمینه طراحی رابط کاربری، پیاده‌سازی وب‌سایت‌های مدرن و بهینه‌سازی برای موتورهای جستجو، به شما کمک می‌کند تا حضور آنلاین قوی‌تری داشته باشید و مشتریان بیشتری جذب کنید.
+      </p>
+    </div>
+    
+    <a href="#contact" class="header__content-cta inline-block text-[var(--primaryColor)] border border-[var(--primaryColor)] hover:bg-[var(--primaryColor)] hover:text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition">
+      دریافت مشاوره رایگان
+    </a>
+  </div>
+
+  <!-- بخش تصویر سمت چپ -->
+  <div class="header__content-image w-1/2">
+    <img src="public/images/Company-amico.svg" alt="طراحی سایت و گرافیک" class="w-full max-w-md mx-auto" />
+  </div>
+
+</section>
+
   </header>
 
   <main class="container">
-    <section class="flex-row-center"></section>
+    <section class="hero flex-row-center"></section>
   </main>
   <footer></footer>
 

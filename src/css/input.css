@@ -95,7 +95,7 @@
 .header__content--adivce::before {
   content: '';
   position: absolute;
-  background: url('../public/images/frame.png');
+  background: url('/public/images/frame.png');
   background-position: center;
   background-size: contain;
   inset: 0;
@@ -109,6 +109,7 @@
   transform: translateY(-10px);  
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none; 
+  margin-top: 17px;
 }
 
 .dropdown__menu:hover .dropdown__item {
