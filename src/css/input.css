@@ -109,10 +109,9 @@
   content: '';
   position: absolute;
   background: url('/public/images/frame.png');
-  background-position: center;
   background-size: contain;
   inset: 0;
-  filter: opacity(0.1);
+  filter: opacity(0.2);
   pointer-events: none; 
 }
 .dropdown__item {
@@ -134,5 +133,17 @@
 .header__service-link:hover, .header__menu-link:hover{
     color: var(--primaryColor);
 }
-
+.need_support{
+  position: relative;
+}
+.need_support::before {
+  content: '';
+  position: absolute;
+  background: url('/public/images/frame.png');
+  background-position: center;
+  background-size: contain;
+  inset: 0;
+  filter:  opacity(0.3);
+  pointer-events: none; 
+}
 
