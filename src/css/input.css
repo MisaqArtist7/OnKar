@@ -99,7 +99,7 @@
   background-position: center;
   background-size: contain;
   inset: 0;
-  filter: blur(0.5px);
+  filter: opacity(0.4);
   pointer-events: none; 
 }
 .footer__section {
@@ -147,3 +147,10 @@
   pointer-events: none; 
 }
 
+.footer_top--btn{
+  box-shadow: 0 0 10px 7px rgba(255, 255, 255, 0.5);
+}
+:hover{
+  transition: all 77ms ease-in-out;
+  transition-duration: 150ms;
+}

@@ -9,50 +9,193 @@
 <body>
 
   <!-- Header section -->
-  
-  <!-- Header section -->
+  <header class="header hero flex-col justify-center">
+    <nav class="header__nav flex items-center shadow-md container mt-7 rounded-xs h-20 bg-white justify-between w-full relative">
 
+      <!-- لوگوی سایت -->
+      <a href="/index.html" class="header__logo font-black text-2xl text-[var(--primaryColor)]">OnKar</a>
+
+      <!-- منوی اصلی ناوبری -->
+      <ul class="header__menu flex items-center gap-5 text-[var(--text)]">
+
+        <!-- آیتم خانه -->
+        <li class="header__menu-item rounded-full text-[var(--primaryColor)]">
+          <a href="#" class="header__menu-link">خانه</a>
+        </li>
+
+        <!-- آیتم سرویس‌ها با زیرمنو -->
+        <li class="header__menu-item rounded-full py-1 dropdown__menu">
+          <a href="#" class="header__menu-link flex items-center gap-1">
+            سرویس های ما
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </a>
+
+          <!-- زیرمنو سرویس‌ها: پاپ‌آپ -->
+          <div class="dropdown__item header__submenu absolute bg-white top-18 w-[777px] h-[222px] rounded-lg shadow-Main p-2 mx-auto left-0 right-0">
+            <div class="header__submenu-content flex justify-between items-center h-full gap-2">
+
+              <!-- بخش تماس با ما -->
+              <div class="header__contact header__content--adivce w-1/3 bg-[var(--primaryColor)] flex flex-col-center gap-4 font-semibold items-center text-white h-full rounded-lg px-3 py-5">
+                <h2 class="header__contact-title text-md text-center">برای اطلاعات بیشتر با ما تماس بگیرید</h2>
+
+                <a href="" class="header__contact-btn flex items-center gap-1 text-sm border px-3 py-1.5 rounded-full hover:bg-white hover:text-[var(--primaryColor)]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                  </svg>
+                  دریافت مشاوره
+                </a>
+              </div>
+
+              <!-- بخش سرویس‌ها -->
+              <div class="header__services h-full flex justify-around w-full gap-1 px-3 py-5">
+
+                <!-- طراحی وب سایت -->
+                <div class="header__service w-1/3">
+                  <h2 class="header__service-title text-md font-bold mb-3">طراحی وب سایت</h2>
+                  <ul class="header__service-list flex flex-col justify-center gap-2">
+                    <li><a href="#" class="header__service-link">کدنویسی وب</a></li>
+                    <li><a href="#" class="header__service-link">وردپرس</a></li>
+                    <li><a href="#" class="header__service-link">طراحی لوگو</a></li>
+                    <li><a href="#" class="header__service-link">بهینه‌سازی سایت</a></li>
+                  </ul>
+                </div>
+
+                <!-- طراحی گرافیک -->
+                <div class="header__service w-1/3">
+                  <h2 class="header__service-title text-md font-bold mb-3">طراحی گرافیک</h2>
+                  <ul class="header__service-list flex flex-col justify-center gap-2">
+                    <li><a href="#" class="header__service-link">طراحی لوگو</a></li>
+                    <li><a href="#" class="header__service-link">کارت ویزیت</a></li>
+                    <li><a href="#" class="header__service-link">بروشور و کاتالوگ</a></li>
+                    <li><a href="#" class="header__service-link">طراحی بنر</a></li>
+                  </ul>
+                </div>
+
+                <!-- سئو -->
+                <div class="header__service w-1/3">
+                  <h2 class="header__service-title text-md font-bold mb-3">سئو</h2>
+                  <ul class="header__service-list flex flex-col justify-center gap-2">
+                    <li><a href="#" class="header__service-link">تحلیل کلمات کلیدی</a></li>
+                    <li><a href="#" class="header__service-link">بهینه‌سازی محتوا</a></li>
+                    <li><a href="#" class="header__service-link">لینک‌سازی داخلی</a></li>
+                    <li><a href="#" class="header__service-link">گزارش‌گیری و آنالیز</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <!-- آیتم تماس با ما -->
+        <li class="header__menu-item rounded-full py-1">
+          <a href="#" class="header__menu-link">بلاگ ها</a>
+        </li>
+        <!-- آیتم درباره ما -->
+        <li class="header__menu-item rounded-full py-1">
+          <a href="#" class="header__menu-link">درباره ما</a>
+        </li>
+
+        <!-- آیتم تماس با ما -->
+        <li class="header__menu-item rounded-full py-1">
+          <a href="#" class="header__menu-link">تماس با ما</a>
+        </li>
+      </ul>
+
+      <!-- دکمه ثبت نام/ورود -->
+      <div class="header__auth bg-[var(--primaryColor)] text-white py-2.5 px-3 rounded-lg">
+        <a href="" class="header__auth-link flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+          </svg>
+          ثبت نام | ورود
+        </a>
+      </div>
+
+    </nav>
+
+    <section class="header__content container py-11 grid grid-cols-12 items-center">
+
+      <!-- بخش متن سمت راست -->
+      <div class="header__content-text col-span-6">
+        <div class="header__content-text-box">
+          <h2 class="header__content-title text-lg mb-2 text-[var(--primaryColor)]">
+          ____آژانس دیجیتال مارکتینگ آن کار  
+          </h1>
+          <h1 class="header__content-title text-3xl font-bold mb-4 leading-[44px]">
+            خدمات طراحی گرافیک، وب‌سایت و سئو برای رشد کسب‌وکار شما
+          </h1>
+          <p class="header__content-description text-base text-gray-700 mb-6 leading-relaxed text-justify">
+            تیم ما با تجربه‌ای گسترده در زمینه طراحی رابط کاربری، پیاده‌سازی وب‌سایت‌های مدرن و بهینه‌سازی برای موتورهای جستجو، به شما کمک می‌کند تا حضور آنلاین قوی‌تری داشته باشید و مشتریان بیشتری جذب کنید.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 text-lg mt-7">
+          <a href="./" class="header__content-cta flex-row-center gap-2 border border-[var(--primaryColor)] bg-[var(--primaryColor)] text-white px-5 py-2 rounded-md hover:bg-opacity-90 transition">
+            ۰۲۱۷۶۳۳۳۳۳۳
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+            </svg>
+          </a>
+          <a href="./" class="header__content-cta flex-row-center gap-2 text-[var(--primaryColor)] border border-[var(--primaryColor)] px-5 py-2 rounded-md hover:bg-[var(--primaryColor)] hover:text-white">
+            ۰۹۳۰۲۳۴۰۲۷۹
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- بخش تصویر سمت چپ -->
+      <div class="header__content-image col-span-6">
+        <img src="public/images/Company-amico.svg" alt="طراحی سایت و گرافیک" class="w-full mx-auto" />
+      </div>
+
+    </section>
+
+  </header>
+  <!-- Header section -->
 
   <main class="container">
 
-  <section class="services flex justify-center items-center gap-7 container my-11">
+  <section class="services flex flex-col justify-center items-center gap-7 container mt-7 mb-16">
+    <div class="flex-col-center gap-3">
+      <h2 class="text-4xl font-semibold">خدمات آن کار</h2>
+      <p class="text-[--(text)]">در آن کار توسعه بر آن شدیم که بخشی از نیاز کسب و کار های شما رو برآورده کنیم و تا رسیدن به هدف شما همراه شما باشیم و از رضایت شما لذت ببریم.</p>
+    </div>
     <!-- بلاک اصلی services -->
-    <div class="services__item bg-white p-3 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
-      <!-- آیتم: سئو وب سایت -->
-      <img src="public/images/tech company-amico.svg" class="services__icon w-[202px]" alt="سئو وب سایت">
-      <h2 class="services__title text-lg font-semibold">خدمات سئو وب سایت</h2>
-      <a href="" class="text-gray-700 flex-row-center gap-1 hover:text-[var(--primaryColor)]">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-        </svg>
-        دریافت مشاوره</a>
-    </div>
+     <div class="grid grid-cols-4 place-items-center gap-3">
 
-    <div class="services__item bg-white p-3 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
-      <!-- آیتم: طراحی وب سایت -->
-      <img src="public/images/Startup life-amico.svg" class="services__icon w-[202px]" alt="طراحی وب سایت">
-      <h2 class="services__title text-lg font-semibold">خدمات طراحی وب سایت</h2>
-      <a href="" class="text-gray-700 flex-row-center gap-1 hover:text-[var(--primaryColor)]">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-        </svg>
-        دریافت مشاوره</a>
-    </div>
+      <div class="services__item bg-white p-5 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
+        <!-- آیتم: سئو وب سایت -->
+        <img src="public/images/tech company-amico.svg" class="services__icon w-[202px]" alt="سئو وب سایت">
+        <h2 class="services__title text-lg font-semibold">خدمات سئو وب سایت</h2>
+      </div>
+    
+      <div class="services__item bg-white p-5 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
+        <!-- آیتم: طراحی وب سایت -->
+        <img src="public/images/Startup life-amico.svg" class="services__icon w-[202px]" alt="طراحی وب سایت">
+        <h2 class="services__title text-lg font-semibold">خدمات طراحی وب سایت</h2>
+      </div>
 
-    <div class="services__item bg-white p-3 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
-      <!-- آیتم: طراحی گرافیک -->
-      <img src="public/images/Startup life-amico.svg" class="services__icon w-[202px]" alt="طراحی گرافیک">
-      <h2 class="services__title text-lg font-semibold">خدمات طراحی گرافیک</h2>
-      <a href="" class="text-gray-700 flex-row-center gap-1 hover:text-[var(--primaryColor)]">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-        </svg>
-        دریافت مشاوره</a>
-    </div>
+      <div class="services__item bg-white p-5 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
+        <!-- آیتم: طراحی گرافیک -->
+        <img src="public/images/Startup life-amico.svg" class="services__icon w-[202px]" alt="طراحی گرافیک">
+        <h2 class="services__title text-lg font-semibold">خدمات طراحی گرافیک</h2>
+      </div>
+
+      <div class="services__item bg-white p-5 rounded shadow flex-col-center gap-1.5 transition-transform duration-300 hover:-translate-y-2 hover:cursor-pointer">
+          <!-- آیتم: طراحی گرافیک -->
+          <img src="public/images/Startup life-amico.svg" class="services__icon w-[202px]" alt="طراحی گرافیک">
+          <h2 class="services__title text-lg font-semibold">پشتیبانی وب سایت</h2>
+      </div>
+
+     </div>
 
   </section>
   
-  <section class="need_support rounded-lg shadow bg-[var(--primaryColor)] flex flex-col md:flex-row justify-between items-center p-11 my-11 gap-6">
+  <section class="need_support rounded-lg shadow bg-[var(--primaryColor)] flex flex-col md:flex-row justify-between items-center p-11 mb-16 gap-6">
     <div>
       <h2 class="text-3xl font-semibold text-white text-center md:text-right">به مشاوره تلفنی نیاز دارید؟</h2>
     </div>
@@ -63,11 +206,114 @@
     </form>
   </section>
 
+  <section class="blogs my-14">
+    <div class="flex-col-center gap-3">
+      <h2 class="text-4xl font-semibold">بلاگ های ما</h2>
+      <p class="text-[--(text)]">با وبلاگ آن کار همراه باشید تا از جدیدترین آموزش ها و خبر های دنیای طراحی سایت باخبر شوید.</p>
+    </div>
+    <div class="grid grid-cols-3 place-items-center gap-3 my-7">
+      <div class="bg-white shadow rounded-xl overflow-hidden">
+        <img src="public/images/pic1.jpg" alt="">
+        <div class="flex flex-col justify-center gap-2 p-7">
+          <h3 class="font-semibold text-xl text-justify">چگونه از طریق سایت درآمد اینترنتی کسب کنیم؟</h3>
+          <p class="text-gray-600 text-justify">در قرن بیست‌ و یک و گسترش ارتباطات، کمتر کارآفرینی است که به فکر افزایش درآمد و رونق کسب‌ و کارش از طریق اینترنت نیفتاده</p>
+          <a href="" class="text-[var(--primaryColor)] flex items-center font-semibold gap-1 mt-3">مشاهده مطلب
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded-xl overflow-hidden">
+        <img src="public/images/pic1.jpg" alt="">
+        <div class="flex flex-col justify-center gap-2 p-7">
+          <h3 class="font-semibold text-xl text-justify">چگونه از طریق سایت درآمد اینترنتی کسب کنیم؟</h3>
+          <p class="text-gray-600 text-justify">در قرن بیست‌ و یک و گسترش ارتباطات، کمتر کارآفرینی است که به فکر افزایش درآمد و رونق کسب‌ و کارش از طریق اینترنت نیفتاده</p>
+          <a href="" class="text-[var(--primaryColor)] flex items-center font-semibold gap-1 mt-3">مشاهده مطلب
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded-xl overflow-hidden">
+        <img src="public/images/pic1.jpg" alt="">
+        <div class="flex flex-col justify-center gap-2 p-7">
+          <h3 class="font-semibold text-xl text-justify">چگونه از طریق سایت درآمد اینترنتی کسب کنیم؟</h3>
+          <p class="text-gray-600 text-justify">در قرن بیست‌ و یک و گسترش ارتباطات، کمتر کارآفرینی است که به فکر افزایش درآمد و رونق کسب‌ و کارش از طریق اینترنت نیفتاده</p>
+          <a href="" class="text-[var(--primaryColor)] flex items-center font-semibold gap-1 mt-3">مشاهده مطلب
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-row-center font-semibold text-xl">
+      <a href="" class="text-[var(--primaryColor)] border-2 border-[var(--primaryColor)] flex items-center font-semibold gap-1 mt-3 px-7 py-2 rounded hover:bg-[var(--primaryColor)] hover:text-white">مشاهده همه مقالات
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+    </div>
+  </section>
 
   </main>
 
   <!-- Footer section -->
+  <footer class="footer__section bg-[var(--primaryColor)] rounded-t-[77px] shadow py-4 relative">
+    <span class="absolute footer_top--btn bg-white p-3 border-2 border-[var(--primaryColor)] text-[var(--primaryColor)] hover:cursor-pointer hover:text-white hover:bg-[var(--primaryColor)] rounded-full -top-5 right-11">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+      </svg>
+    </span>
+
+    <div class="container bg-white shadow-Main rounded-4xl my-11 py-11 flex flex-col justify-between items-center">
+      <div class="flex justify-between items-center">
+        <div class="w-1/3 flex flex-col items-start gap-2">
+          <a href="/index.html" class="flex-row-center text-2xl font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+            </svg>
+           آن<span class="text-[var(--primaryColor)]">کا</span>ر
+          </a>
+          <p class="services__description text-sm text-gray-600 mt-2 text-justify">
+            در تیم ما، با ترکیب خلاقیت در طراحی گرافیک، مهارت در برنامه‌نویسی وب و دانش به‌روز سئو، راهکارهایی حرفه‌ای برای رشد کسب‌وکار آنلاین شما ارائه می‌دهیم. از طراحی لوگو و رابط کاربری تا بهینه‌سازی برای موتورهای جست‌وجو، همه‌چیز را یک‌جا تجربه کنید.
+          </p>
+          <div class="flex items-center w-full mt-3 gap-2 *:hover:text-[var(--primaryColor)] *:hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+            </svg>
+          </div>
+        </div>
   
+        <div class="w-1/2">
+          <h3 class="font-semibold text-xl">دسترسی سریع</h3>
+          <ul class="flex flex-col justify-center gap-2 mt-2 *:font-medium">
+            <li><a href="" class="header__service-link text-gray-700">خانه</a></li>
+            <li><a href="" class="header__service-link text-gray-700">درباره ما</a></li>
+            <li><a href="" class="header__service-link text-gray-700">تماس با ما</a></li>
+            <li><a href="" class="header__service-link text-gray-700">دریافت مشاوره</a></li>
+            <li><a href="" class="header__service-link text-gray-700">ورود | ثبت نام</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="w-full border-t-2 border-gray-200 mt-11 py-5 text-sm text-gray-500">
+        <p>© تمامی حقوق این وب‌سایت متعلق به <strong>OnKar</strong> می‌باشد. هرگونه کپی‌برداری بدون اجازه کتبی پیگرد قانونی دارد.</p>
+      </div>
+
+    </div>
+  </footer>
   <!-- Footer section -->
 
   <script src="src/js/app.js"></script>
