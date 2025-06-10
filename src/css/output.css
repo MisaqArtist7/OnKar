@@ -455,9 +455,29 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-\[1\.5px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1.5px;
+  }
+  .border-\[1\.6px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1.6px;
+  }
+  .border-\[1\.7px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1.7px;
+  }
+  .border-\[1\.9px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1.9px;
   }
   .border-t-2 {
     border-top-style: var(--tw-border-style);
