@@ -19,3 +19,13 @@ dropdownMenu.addEventListener('mouseleave', () => {
     dropdownItem.style.pointerEvents = 'none';
   }, 369); 
 });
+
+  import Swiper from 'swiper';
+  import 'swiper/css';
+  const swiper = new Swiper('.swiper', {
+    // options here
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
