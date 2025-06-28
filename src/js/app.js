@@ -20,12 +20,5 @@ dropdownMenu.addEventListener('mouseleave', () => {
   }, 369); 
 });
 
-  import Swiper from 'swiper';
-  import 'swiper/css';
-  const swiper = new Swiper('.swiper', {
-    // options here
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
+
+

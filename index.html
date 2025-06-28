@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>OnKar</title>
 </head> 
 <body>
@@ -196,36 +197,50 @@
   </section>
 
   <section class="flex flex-col justify-center items-center gap-7 mt-7 mb-16">
-    <div class="flex-row-center gap-3">
+    <div class="flex flex-row items-center justify-center gap-3">
       <h2 class="text-4xl font-semibold">مشتری های ما</h2>
     </div>
-    <div class="grid grid-cols-5">
-      <div>
-        <img src="public/images/support.svg" class="services__icon w-full" alt="سئو وب سایت">
+
+    <!-- Swiper -->
+    <div class="swiper w-full">
+      <div class="swiper-wrapper">  
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="public/images/support.svg" class="w-full" alt="سئو وب سایت" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="public/images/support.svg" class="w-full" alt="سئو وب سایت" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="public/images/support.svg" class="w-full" alt="سئو وب سایت" />
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="public/images/support.svg" class="w-full" alt="سئو وب سایت" />
+        </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <img src="public/images/support.svg" class="w-full" alt="سئو وب سایت" />
+        </div>
+        <div class="swiper-slide">
+          <img src="public/images/support.svg" class="w-full" alt="سئو وب سایت" />
+        </div>
       </div>
-            <div>
-        <img src="public/images/support.svg" class="services__icon w-full" alt="سئو وب سایت">
-      </div>
-            <div>
-        <img src="public/images/support.svg" class="services__icon w-full" alt="سئو وب سایت">
-      </div>
-            <div>
-        <img src="public/images/support.svg" class="services__icon w-full" alt="سئو وب سایت">
-      </div>
-            <div>
-        <img src="public/images/support.svg" class="services__icon w-full" alt="سئو وب سایت">
-      </div>
-    </div>
-    <div class="flex items-center justify-center gap-2">
-      <div class="border border-[var(--primaryColor)] text-[var(--primaryColor)] hover:bg-[var(--primaryColor)] hover:text-white rounded-full p-2 hover:cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </div>
-      <div class="border border-[var(--primaryColor)] text-[var(--primaryColor)] hover:bg-[var(--primaryColor)] hover:text-white rounded-full p-2 hover:cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
+
+      <!-- Custom Navigation -->
+      <div class="flex items-center justify-center gap-2 mt-5">
+        <div class="my-swiper-next border border-[var(--primaryColor)] text-[var(--primaryColor)] hover:bg-[var(--primaryColor)] hover:text-white rounded-full p-2 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+        <div class="my-swiper-prev border border-[var(--primaryColor)] text-[var(--primaryColor)] hover:bg-[var(--primaryColor)] hover:text-white rounded-full p-2 hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -352,5 +367,32 @@
   <!-- Footer section -->
 
   <script src="src/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 5,
+    spaceBetween: 22,
+    loop: true,
+    navigation: {
+      nextEl: '.my-swiper-next',
+      prevEl: '.my-swiper-prev',
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+</script>
+
 </body>
 </html>
