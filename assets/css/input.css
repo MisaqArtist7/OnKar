@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root{
+  --primaryColor: #3442A7; /* 3442A7 2d5feb*/
+  --text: #1D2130;
+}
+@layer base {  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Start helper class */
+  .flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Finish helper class */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+}
+
+@theme {
+  --breakpoint-xsm: 480px;   /* Extra small screens (mobile) */
+  --breakpoint-sm: 640px;    /* Small devices (phones) */
+  --breakpoint-md: 768px;    /* Medium devices (tablets) */
+  --breakpoint-lg: 1024px;   /* Large devices (small laptops) */
+  --breakpoint-xl: 1280px;   /* Extra large screens (desktops) */
+  --breakpoint-hd: 1536px;   /* Full HD monitors (1080p) */
+  --breakpoint-4k: 2560px;   /* 4K displays */
+  --breakpoint-8k: 7680px;   /* 8K ultra-high-resolution displays */
+  --text-md: 16px;
+  --shadow-Main: 0 0 7px 0px rgb(55 55 55 / 23%);
+}
+

@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -727,10 +726,16 @@
   --primaryColor: #3442A7;
   --text: #1D2130;
 }
+@font-face {
+  font-family: "IranYekan";
+  src: url("/fonts/iranyekanwebregular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 @layer base {
   body {
-    overflow-x: hidden;
-    background-color: #E9F2FF;
+    font-family: "IranYekan", sans-serif;
+    background-color: #dfe5ff5f;
   }
   * {
     margin: 0;
