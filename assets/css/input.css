@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-:root{
-  --primaryColor: #3442A7; /* 3442A7 2d5feb*/
-  --text: #1D2130;
-}
 @layer base {  
   * {
     margin: 0;

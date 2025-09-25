@@ -8,6 +8,6 @@
     "eslint": "^9.28.0"
   },
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+    "tailwind": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   }
 }

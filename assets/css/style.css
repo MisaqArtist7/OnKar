@@ -1,6 +1,10 @@
 /* Header styles */
+:root{
+  --primaryColor: #000000; /* 3442A7 2d5feb*/
+  --text: #1D2130;
+}
 body {
-    background-color: #dfe5ff5f;
+    background-color: #d9d9d95f;
 }
 .header__content--adivce {
   position: relative;
@@ -9,7 +13,7 @@ body {
 .header__content--adivce::before {
   content: '';
   position: absolute;
-  background: url('/public/images/frame.png');
+  background: url('../images/frame.png');
   background-position: center;
   background-size: contain;
   inset: 0;
@@ -22,7 +26,7 @@ body {
 .footer__section::before{
   content: '';
   position: absolute;
-  background: url('/public/images/frame.png');
+  background: url('../images/frame.png');
   background-size: contain;
   inset: 0;
   filter: opacity(0.2);
@@ -53,7 +57,7 @@ body {
 .need_support::before {
   content: '';
   position: absolute;
-  background: url('/public/images/frame.png');
+  background: url('../images/frame.png');
   background-position: center;
   background-size: contain;
   inset: 0;
