@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>بلاگ | آن کار</title>
+</head> 
+<body>
+
+  <!-- Header section -->
+  <header class="header hero flex-col justify-center">
+    <nav class="header__nav flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+
+      <!-- لوگوی سایت -->
+      <a href="/index.html" class="header__logo font-black text-2xl text-[var(--primaryColor)]">OnKar</a>
+
+      <!-- منوی اصلی ناوبری -->
+      <ul class="header__menu flex items-center gap-5 text-[var(--text)]">
+
+        <!-- آیتم خانه -->
+        <li class="header__menu-item rounded-full text-[var(--primaryColor)]">
+          <a href="/" class="header__menu-link">خانه</a>
+        </li>
+
+        <!-- آیتم سرویس‌ها با زیرمنو -->
+        <li class="header__menu-item rounded-full py-1 dropdown__menu">
+          <a href="#" class="header__menu-link flex items-center gap-1">
+            سرویس های ما
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </a>
+
+          <!-- زیرمنو سرویس‌ها: پاپ‌آپ -->
+          <div class="dropdown__item header__submenu absolute bg-white top-18 w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
+            <div class="header__submenu-content flex justify-between items-center h-full gap-2">
+
+              <!-- بخش تماس با ما -->
+              <div class="header__contact header__content--adivce w-1/3 bg-[var(--primaryColor)] flex flex-col-center gap-4 font-semibold items-center text-white h-full rounded px-3 py-5">
+                <h2 class="header__contact-title text-md text-center">برای اطلاعات بیشتر با ما تماس بگیرید</h2>
+
+                <a href="" class="header__contact-btn flex items-center gap-1 text-sm border px-3 py-1.5 rounded-full hover:bg-white hover:text-[var(--primaryColor)]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                  </svg>
+                  دریافت مشاوره
+                </a>
+              </div>
+
+              <!-- بخش سرویس‌ها -->
+              <div class="header__services h-full flex justify-around w-full gap-1 px-3 py-5">
+
+                <!-- طراحی وب سایت -->
+                <div class="header__service w-1/3">
+                  <h2 class="header__service-title font-semibold text-lg mb-3">طراحی وب سایت</h2>
+                  <ul class="header__service-list flex flex-col justify-center gap-2 text-gray-700">
+                    <li><a href="#" class="header__service-link">کدنویسی وب</a></li>
+                    <li><a href="#" class="header__service-link">وردپرس</a></li>
+                    <li><a href="#" class="header__service-link">طراحی لوگو</a></li>
+                    <li><a href="#" class="header__service-link">بهینه‌سازی سایت</a></li>
+                  </ul>
+                </div>
+
+                <!-- طراحی گرافیک -->
+                <div class="header__service w-1/3">
+                  <h2 class="header__service-title font-semibold text-lg mb-3">طراحی گرافیک</h2>
+                  <ul class="header__service-list flex flex-col justify-center gap-2 text-gray-700">
+                    <li><a href="#" class="header__service-link">طراحی لوگو</a></li>
+                    <li><a href="#" class="header__service-link">کارت ویزیت</a></li>
+                    <li><a href="#" class="header__service-link">بروشور و کاتالوگ</a></li>
+                    <li><a href="#" class="header__service-link">طراحی بنر</a></li>
+                  </ul>
+                </div>
+
+                <!-- سئو -->
+                <div class="header__service w-1/3">
+                  <h2 class="header__service-title font-semibold text-lg mb-3">سئو</h2>
+                  <ul class="header__service-list flex flex-col justify-center gap-2 text-gray-700">
+                    <li><a href="#" class="header__service-link">تحلیل کلمات کلیدی</a></li>
+                    <li><a href="#" class="header__service-link">بهینه‌سازی محتوا</a></li>
+                    <li><a href="#" class="header__service-link">لینک‌سازی داخلی</a></li>
+                    <li><a href="#" class="header__service-link">گزارش‌گیری و آنالیز</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <!-- آیتم تماس با ما -->
+        <li class="header__menu-item rounded-full py-1">
+          <a href="#" class="header__menu-link">بلاگ ها</a>
+        </li>
+        <!-- آیتم درباره ما -->
+        <li class="header__menu-item rounded-full py-1">
+          <a href="#" class="header__menu-link">درباره ما</a>
+        </li>
+
+        <!-- آیتم تماس با ما -->
+        <li class="header__menu-item rounded-full py-1">
+          <a href="#" class="header__menu-link">تماس با ما</a>
+        </li>
+      </ul>
+
+      <!-- دکمه ثبت نام/ورود -->
+      <div class="header__auth bg-[var(--primaryColor)] text-white py-2.5 px-3 rounded">
+        <a href="" class="header__auth-link flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+          </svg>
+          ثبت نام | ورود
+        </a>
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- Header section -->
+
+  <main class="container">
+
+  </main>
+
+  <!-- Footer section -->
+  <footer class="mt-25 sm:mt-40 bg-white dark:bg-darker py-8 md:pt-16 md:pb-10">
+      <div class="container">
+          <div class="flex items-center justify-between pb-5 mb-5 sm:pb-8 sm:mb-8 border-b border-b-neutral-200">
+              <div class="flex justify-center items-center">
+                  <h3>7TeamAcademi</h3>
+                  <svg class="w-6 h-6 text-black">
+                      <use href="#academic"></use>
+                  </svg>
+              </div>
+              <div class="flex items-center flex-wrap gap-x-7">
+                  <a href="tel:02191030926" class="flex items-center flex-grow md:flex-grow-0 gap-x-1.5 sm:gap-x-2 text-sm sm:text-base">
+                      <svg class="size-5 sm:size-6">
+                          <use href="#Phone"></use>
+                      </svg>
+                      ۰۹۳۰۲۳۴۰۲۷۹
+                  </a>
+                  <a href="mailto:info@7team.ir" class="flex items-center flex-grow md:flex-grow-0 gap-x-1.5 sm:gap-x-2 text-sm sm:text-base">
+                      <svg class="size-5 sm:size-6">
+                          <use href="#Envelope"></use>
+                      </svg>
+                      info@7team.ir
+                  </a>
+                  <a href="https://t.me/sabzlearn_support" class="flex items-center flex-grow md:flex-grow-0 gap-x-1.5 sm:gap-x-2 text-sm sm:text-base">
+                      <svg class="size-5 sm:size67">
+                          <use href="#telegram"></use>
+                      </svg>
+                      7team_support@
+                  </a>
+              </div>
+              <div class="flex justify-center items-center gap-x-2">
+                  <a href="https://linkedin.com/company/sabzlearn-academy" rel="nofollow">
+                      <svg class="size-[30px] sm:size-[38px] text-slate-900 transition-colors hover:text-sky-500" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19 0C8.50819 0 0 8.50819 0 19C0 29.4918 8.50819 38 19 38C29.4918 38 38 29.4918 38 19C38 8.50819 29.4918 0 19 0ZM13.4788 28.7227H8.85146V14.8011H13.4788V28.7227ZM11.1653 12.9001H11.1351C9.58234 12.9001 8.57806 11.8312 8.57806 10.4953C8.57806 9.1292 9.61307 8.08984 11.196 8.08984C12.779 8.08984 13.7531 9.1292 13.7832 10.4953C13.7832 11.8312 12.779 12.9001 11.1653 12.9001ZM30.1641 28.7227H25.5373V21.275C25.5373 19.4033 24.8673 18.1268 23.1931 18.1268C21.9148 18.1268 21.1535 18.9878 20.8189 19.819C20.6966 20.1165 20.6667 20.5322 20.6667 20.9482V28.7227H16.0397C16.0397 28.7227 16.1003 16.1072 16.0397 14.8011H20.6667V16.7723C21.2816 15.8237 22.3819 14.4744 24.8369 14.4744C27.8813 14.4744 30.1641 16.4641 30.1641 20.7401V28.7227Z" fill="currentColor"></path>
+                      </svg>
+                  </a>
+                  <a href="https://www.instagram.com/sabzlearn_" rel="nofollow">
+                      <svg class="size-[30px] sm:size-[38px] text-slate-900 transition-colors hover:text-sky-500" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0C29.4938 0 38 8.42804 38 18.8254C38 29.2227 29.4938 37.6508 19 37.6508C8.50621 37.6508 0 29.2227 0 18.8254C0 8.42804 8.50621 0 19 0ZM15.0248 9.3296C11.4505 9.49138 9.57273 11.4842 9.41687 14.8868C9.29813 17.4628 9.29813 20.188 9.41687 22.764C9.57273 26.1666 11.4505 28.1594 15.0248 28.3212C17.6255 28.4381 20.3753 28.4381 22.9759 28.3212C26.41 28.1653 28.4206 26.3077 28.5839 22.764C28.7019 20.1873 28.7019 17.4642 28.5839 14.8868C28.4236 11.4188 26.4761 9.48844 22.9759 9.3296C20.3753 9.21267 17.6255 9.21267 15.0248 9.3296ZM22.8965 11.0496C25.4934 11.1665 26.7306 12.3917 26.8479 14.9654C26.9652 17.4878 26.9652 20.163 26.8479 22.6853C26.7269 25.3334 25.4259 26.4872 22.8965 26.6012C20.3493 26.7166 17.6514 26.7166 15.1043 26.6012C12.5741 26.4872 11.2738 25.3334 11.1521 22.6853C11.0356 20.163 11.0356 17.4878 11.1521 14.9654C11.2671 12.4578 12.4324 11.1702 15.1043 11.0496C17.6514 10.9342 20.3493 10.9342 22.8965 11.0496ZM19 22.0095C17.2254 22.0095 15.7863 20.5844 15.7863 18.8254C15.7871 17.0664 17.2254 15.6412 19 15.6412C20.7753 15.6412 22.2144 17.0664 22.2144 18.8254C22.2144 20.5837 20.7753 22.0095 19 22.0095ZM19 13.9198C16.2665 13.9198 14.0489 16.1163 14.0489 18.8254C14.0489 21.5345 16.2658 23.731 19 23.731C21.735 23.731 23.9511 21.5345 23.9511 18.8254C23.9511 16.1163 21.735 13.9198 19 13.9198ZM25.3041 13.7256C25.3041 14.3588 24.7861 14.8728 24.1471 14.8728C23.5073 14.8728 22.99 14.3595 22.99 13.7264C22.99 13.0932 23.5073 12.5799 24.1471 12.5799C24.7861 12.5799 25.3041 13.0932 25.3041 13.7256Z" fill="currentColor"></path>
+                      </svg>
+                  </a>
+                  <a href="https://t.me/sabzlearn" rel="nofollow">
+                      <svg class="size-[30px] sm:size-[38px] text-slate-900 transition-colors hover:text-sky-500" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="1" d="M18.6613 37.0256C28.9701 37.0256 37.3226 28.7396 37.3226 18.5128C37.3226 8.28603 28.9701 0 18.6613 0C8.35248 0 0 8.28603 0 18.5128C0 28.7396 8.35248 37.0256 18.6613 37.0256ZM8.53909 18.1117L26.5317 11.2296C27.3668 10.9303 28.0961 11.4317 27.8255 12.6844L27.8271 12.6828L24.7635 27.001C24.5365 28.0161 23.9284 28.2629 23.0778 27.7847L18.4125 24.3737L16.1622 26.5242C15.9134 26.7711 15.7035 26.9794 15.2214 26.9794L15.5526 22.2694L24.199 14.5202C24.5754 14.1916 24.115 14.0065 23.619 14.3336L12.9338 21.0074L8.3276 19.5819C7.32766 19.2672 7.30589 18.59 8.53909 18.1117Z" fill="currentColor"></path>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+          <div class="flex items-start justify-between flex-wrap gap-5">
+              <div>
+                  <a href="/index.html" class="flex items-center text-2xl font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="w-7 h-7">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+                  آن<span class="text-[var(--primaryColor)]">کا</span>ر
+                  </a>
+                  <p class="max-w-[404px] text-slate-700 text-justify pt-2">
+                    در تیم ما، با ترکیب خلاقیت در طراحی گرافیک، مهارت در برنامه‌نویسی وب و دانش به‌روز سئو، راهکارهایی حرفه‌ای برای رشد کسب‌وکار آنلاین شما ارائه می‌دهیم. از طراحی لوگو و رابط کاربری تا بهینه‌سازی برای موتورهای جست‌وجو، همه‌چیز را یک‌جا تجربه کنید.
+                  </p>
+              </div>
+              <div class="flex items-center justify-center gap-12">
+                  <div class="flex flex-col items-start justify-center gap-y-3 text-slate-700">
+                      <span class="inline-block sm:text-2xl font-bold mb-3 sm:mb-4 text-black">دوره های پر طرفدار</span>
+                      <a href="">آموزش ری اکت</a>
+                      <a href="">آموزش TailwindCss</a>
+                      <a href="">آموزش امنیت</a>
+                      <a href="">آموزش NextJS</a>
+                  </div>
+                  <div class="flex flex-col items-start justify-center gap-y-3 text-slate-700">
+                      <span class="inline-block sm:text-2xl font-bold mb-3 sm:mb-4 text-black">دسترسی سریع</span>
+                      <a href="">صفحه اصلی</a>
+                      <a href="">مقالات</a>
+                      <a href="">تماس با ما</a>
+                      <a href="">ثبت پروژه</a>
+                  </div>
+              </div>
+              <a href="https://trustseal.enamad.ir/?id=445206&amp;code=SgLtG6QTvIyffV2cjuiTe4sSPvMqsNSf">
+                  <img src="https://sabzlearn.ir/wp-content/themes/sabzlearn-theme/images/enamad.png" class="w-[120px] " alt="">
+              </a>
+          </div>
+          <div class="text-center sm:text-right border-t-2 border-gray-200 pt-3 mt-8 sm:mt-10">
+              <p>© تمامی حقوق این وب‌سایت متعلق به <strong>OnKar</strong> می‌باشد. هرگونه کپی‌برداری بدون اجازه کتبی پیگرد قانونی دارد.</p>
+          </div>
+      </div>
+  </footer>
+  <!-- Footer section -->
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
