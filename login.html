@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>ورود | آن کار</title>
+</head> 
+<body>
+  <svg class="hidden">
+    <symbol id="phone" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path> </symbol>
+  </svg>
+
+
+  <main class="flex-col-center relative px-4 py-6 min-h-screen">
+    <div class="max-w-[369px] w-full pt-7 pb-6 px-6 text-center bg-white rounded">
+      <div class="user-data">
+        <h4 class="font-IranYekanBold text-xl mb-4 sm:mb-4">ورود با موبایل</h4>
+        <p class="mb-5">
+            حساب کاربری ندارید؟
+					<a href="register.html" class="font-danaDemiBold text-[var(--primaryColor)]">ثبت نام کنید</a>
+				</p>
+
+        <form action="" class="user-data__form space-y-5">
+          <div class="relative flex items-center justify-between px-3 border-2 border-gray-100 hover:border-[var(--primaryColor)] outline-none w-full rounded">
+            <input type="text" class="outline-none w-full py-3" placeholder="شماره موبایل" inputmode="tel" value="">
+            <svg class="w-7 h-7 text-gray-600">
+              <use href="#phone"></use>
+            </svg>
+          </div>
+            <button type="submit" class="bg-[var(--primaryColor)] text-lg rounded h-11 text-white w-full cursor-pointer">ورود</button>
+        </form>
+        
+        <div class="flex items-center justify-between font-danaMedium text-sm text-slate-500 mt-5">
+					<a href="">ورود با ایمیل</a>
+          <a href="" class="underline underline-offset-2">حریم خصوصی</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="max-w-[330px] font-IranYekan w-full mx-auto text-center mt-7 sm:mt-8">
+			با عضویت در سایت، تمامی قوانین و شرایط استفاده از خدمات
+			<a href="/" class="text-[var(--primaryColor)]">آن کار</a> را پذیرفته اید.
+		</div>
+
+    <div class="hidden lg:block absolute top-0 left-0 w-[300px] h-[300px] bg-[var(--primaryColor)] opacity-30 blur-[120px] rounded-full"></div>
+    <div class="hidden lg:block absolute bottom-11 -right-11 w-[300px] h-[300px] bg-[var(--primaryColor)] opacity-30 blur-[120px] rounded-full"></div>
+  </main>
+
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
