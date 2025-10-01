@@ -4,15 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <title>بلاگ | آن کار</title>
+  <title>درباره ما | آن کار</title>
 </head> 
 <body>
+  <svg class="hidden">
+    <symbol id="github" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48 3.97-1.32 6.833-5.054 6.833-9.458C22 6.463 17.522 2 12 2Z"></path></symbol>
 
+    <symbol id="telegram" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100" id="telegram">
+      <path id="Layer_2" d="M89.442,11.418c-12.533,5.19-66.27,27.449-81.118,33.516c-9.958,3.886-4.129,7.529-4.129,7.529s8.5,2.914,15.786,5.1
+        c7.286,2.186,11.172-0.243,11.172-0.243l34.244-23.073c12.143-8.257,9.229-1.457,6.315,1.457
+        c-6.315,6.315-16.758,16.272-25.501,24.287c-3.886,3.4-1.943,6.315-0.243,7.772c6.315,5.343,23.558,16.272,24.53,17.001
+        c5.131,3.632,15.223,8.861,16.758-2.186c0,0,6.072-38.13,6.072-38.13c1.943-12.872,3.886-24.773,4.129-28.173
+        C98.185,8.018,89.442,11.418,89.442,11.418z">
+      </path>
+    </symbol>
+
+    <symbol id="mail" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" overflow="inherit" version="1.2" viewBox="0 0 50 50" id="mail">
+      <path d="M2.941 8c-2.941 0-1.47.779 0 1.974L25 26.763l22.059-16.737C48.531 8.831 50 8 47.059 8H2.941zM0 11.946v24.728C0 38.129 1.488 40 2.665 40h44.67C48.513 40 50 38.129 50 36.674V11.946L25 31.021 0 11.946z"></path>
+    </symbol>
+  </svg>
   <!-- Header section -->
   <header class="header hero flex-col justify-center">
-    <nav class="header__nav flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
-
+    <!-- Tablet and desktop navbar -->
+    <nav class="header__nav hidden md:flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+        
       <!-- لوگوی سایت -->
       <a href="/index.html" class="header__logo font-black text-2xl text-[var(--primaryColor)]">OnKar</a>
 
@@ -34,7 +49,7 @@
           </a>
 
           <!-- زیرمنو سرویس‌ها: پاپ‌آپ -->
-          <div class="dropdown__item header__submenu absolute bg-white top-18 w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
+          <div class="dropdown__item header__submenu absolute bg-white top-18 max-w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
             <div class="header__submenu-content flex justify-between items-center h-full gap-2">
 
               <!-- بخش تماس با ما -->
@@ -92,11 +107,11 @@
         </li>
         <!-- آیتم تماس با ما -->
         <li class="header__menu-item rounded-full py-1">
-          <a href="#" class="header__menu-link">بلاگ ها</a>
+          <a href="blogs.html" class="header__menu-link">بلاگ ها</a>
         </li>
         <!-- آیتم درباره ما -->
         <li class="header__menu-item rounded-full py-1">
-          <a href="#" class="header__menu-link">درباره ما</a>
+          <a href="aboutUs.html" class="header__menu-link">درباره ما</a>
         </li>
 
         <!-- آیتم تماس با ما -->
@@ -117,11 +132,195 @@
 
     </nav>
 
+    <!-- Mobile and desktop navbar -->
+    <nav class="header__nav  md:hidden flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+    
+      <div class="burgerMenu-open bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+        <svg class="w-10 h-10">
+          <use href="#burger-menu"></use>
+        </svg>
+      </div>
+        
+      <!-- لوگوی سایت -->
+      <a href="/index.html" class="header__logo font-semibold text-3xl text-[var(--primaryColor)]">OnKar</a>
+
+
+      <!-- دکمه ثبت نام/ورود -->
+      <a href="#" class="bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+        <svg class="w-10 h-10">
+          <use href="#register"></use>
+        </svg>
+      </a>
+
+    </nav>
+
+    <!-- mobile menu links -->
+    <div class="mobileMenu bg-white shadow w-[303px] py-5 px-3 fixed top-0 right-0 bottom-0 translate-x-full  transition-all ease-in-out duration-150 delay-75">
+      <div class="flex items-center justify-between">
+
+        <div class="burgerMenu-close bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+          <svg class="w-10 h-10">
+            <use href="#x-marc"></use>
+          </svg>
+        </div>
+
+        <a href="/index.html" class="header__logo font-semibold text-3xl text-[var(--primaryColor)]">OnKar</a>
+        
+      </div>
+    </div>
+
   </header>
   <!-- Header section -->
 
-  <main class="container">
-
+  <main class="container my-11">
+    <div class="flex-col-center pt-3 pb-7">
+      <h1 class="text-5xl flex flex-col items-center gap-1"> توسعه دهندگان آن کار
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="w-9 h-9">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"></path>
+        </svg>
+      <p class="text-center max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
+        ما با استفاده از تکنولوژی‌های روز و طراحی کاربرپسند، راهکارهای دیجیتال
+        متناسب با نیاز کسب‌وکار شما ارائه می‌دهیم؛ از توسعه وب‌سایت تا اپلیکیشن‌های مدرن.
+      </p>
+    </div>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+      <!-- card 1 -->
+      <div class="bg-white shadow rounded overflow-hidden flex flex-col justify-between pt-2">
+        <!-- card title and image -->
+        <div>
+          <img src="assets/images/misaq.jpg" alt="" class="rounded-full w-[252px] h-[252px] mx-auto overflow-hidden">
+          <div class="flex flex-col justify-center gap-2 px-7 py-3">
+            <h3 class="font-semibold text-xl">میثاق باباخانی</h3>
+            <span class="text-gray-600 text-justify text-md">توسعه دهنده فرانت</span>
+            <p class="text-md text-gray-700 leading-relaxed text-justify hyphens-auto">
+              توسعه‌دهنده فرانت‌اند با تجربه در React و Next.js، علاقه‌مند به طراحی رابط‌های کاربری جذاب و بهینه‌سازی تجربه کاربر.
+            </p>
+          </div>
+        </div>
+        <!-- card body and link -->
+        <div class=" px-7 py-3">
+          <div class="flex items-center gap-2 border-t border-t-gray-300 py-3"> 
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="git">
+              <svg class="w-7 h-7">
+                <use href="#github"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="telegram">
+              <svg class="w-6 h-6">
+                <use href="#telegram"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="email">
+              <svg class="w-6 h-6">
+                <use href="#mail"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="bg-white shadow rounded overflow-hidden flex flex-col justify-between pt-2">
+        <!-- card title and image -->
+        <div>
+          <img src="assets/images/misaq.jpg" alt="" class="rounded-full w-[252px] h-[252px] mx-auto overflow-hidden">
+          <div class="flex flex-col justify-center gap-2 px-7 py-3">
+            <h3 class="font-semibold text-xl">میثاق باباخانی</h3>
+            <span class="text-gray-600 text-justify text-md">توسعه دهنده فرانت</span>
+            <p class="text-md text-gray-700 leading-relaxed text-justify hyphens-auto">
+              توسعه‌دهنده فرانت‌اند با تجربه در React و Next.js، علاقه‌مند به طراحی رابط‌های کاربری جذاب و بهینه‌سازی تجربه کاربر.
+            </p>
+          </div>
+        </div>
+        <!-- card body and link -->
+        <div class=" px-7 py-3">
+          <div class="flex items-center gap-2 border-t border-t-gray-300 py-3"> 
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="git">
+              <svg class="w-7 h-7">
+                <use href="#github"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="telegram">
+              <svg class="w-6 h-6">
+                <use href="#telegram"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="email">
+              <svg class="w-6 h-6">
+                <use href="#mail"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="bg-white shadow rounded overflow-hidden flex flex-col justify-between pt-2">
+        <!-- card title and image -->
+        <div>
+          <img src="assets/images/misaq.jpg" alt="" class="rounded-full w-[252px] h-[252px] mx-auto overflow-hidden">
+          <div class="flex flex-col justify-center gap-2 px-7 py-3">
+            <h3 class="font-semibold text-xl">میثاق باباخانی</h3>
+            <span class="text-gray-600 text-justify text-md">توسعه دهنده فرانت</span>
+            <p class="text-md text-gray-700 leading-relaxed text-justify hyphens-auto">
+              توسعه‌دهنده فرانت‌اند با تجربه در React و Next.js، علاقه‌مند به طراحی رابط‌های کاربری جذاب و بهینه‌سازی تجربه کاربر.
+            </p>
+          </div>
+        </div>
+        <!-- card body and link -->
+        <div class=" px-7 py-3">
+          <div class="flex items-center gap-2 border-t border-t-gray-300 py-3"> 
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="git">
+              <svg class="w-7 h-7">
+                <use href="#github"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="telegram">
+              <svg class="w-6 h-6">
+                <use href="#telegram"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="email">
+              <svg class="w-6 h-6">
+                <use href="#mail"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="bg-white shadow rounded overflow-hidden flex flex-col justify-between pt-2">
+        <!-- card title and image -->
+        <div>
+          <img src="assets/images/misaq.jpg" alt="" class="rounded-full w-[252px] h-[252px] mx-auto overflow-hidden">
+          <div class="flex flex-col justify-center gap-2 px-7 py-3">
+            <h3 class="font-semibold text-xl">میثاق باباخانی</h3>
+            <span class="text-gray-600 text-justify text-md">توسعه دهنده فرانت</span>
+            <p class="text-md text-gray-700 leading-relaxed text-justify hyphens-auto">
+              توسعه‌دهنده فرانت‌اند با تجربه در React و Next.js، علاقه‌مند به طراحی رابط‌های کاربری جذاب و بهینه‌سازی تجربه کاربر.
+            </p>
+          </div>
+        </div>
+        <!-- card body and link -->
+        <div class=" px-7 py-3">
+          <div class="flex items-center gap-2 border-t border-t-gray-300 py-3"> 
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="git">
+              <svg class="w-7 h-7">
+                <use href="#github"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="telegram">
+              <svg class="w-6 h-6">
+                <use href="#telegram"></use>
+              </svg>
+            </a>
+            <a href="" class="hover:*:fill-[var(--primaryColor)] fill-stone-800" title="email">
+              <svg class="w-6 h-6">
+                <use href="#mail"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer section -->
@@ -212,32 +411,6 @@
   <!-- Footer section -->
 
   <script src="assets/js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 5,
-    spaceBetween: 22,
-    loop: true,
-    navigation: {
-      nextEl: '.my-swiper-next',
-      prevEl: '.my-swiper-prev',
-    },
-    breakpoints: {
-      1024: {
-        slidesPerView: 5,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  });
-</script>
 
 </body>
 </html>
