@@ -10,8 +10,9 @@
 
   <!-- Header section -->
   <header class="header hero flex-col justify-center">
-    <nav class="header__nav flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
-
+    <!-- Tablet and desktop navbar -->
+    <nav class="header__nav hidden md:flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+        
       <!-- لوگوی سایت -->
       <a href="/index.html" class="header__logo font-black text-2xl text-[var(--primaryColor)]">OnKar</a>
 
@@ -33,7 +34,7 @@
           </a>
 
           <!-- زیرمنو سرویس‌ها: پاپ‌آپ -->
-          <div class="dropdown__item header__submenu absolute bg-white top-18 w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
+          <div class="dropdown__item header__submenu absolute bg-white top-18 max-w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
             <div class="header__submenu-content flex justify-between items-center h-full gap-2">
 
               <!-- بخش تماس با ما -->
@@ -89,24 +90,25 @@
             </div>
           </div>
         </li>
-        <!-- آیتم تماس با ما -->
+        <!-- آیتم مقالات -->
         <li class="header__menu-item rounded-full py-1">
-          <a href="#" class="header__menu-link">بلاگ ها</a>
+          <a href="blogs.html" class="header__menu-link">بلاگ ها</a>
         </li>
+
         <!-- آیتم درباره ما -->
         <li class="header__menu-item rounded-full py-1">
-          <a href="#" class="header__menu-link">درباره ما</a>
+          <a href="aboutUs.html" class="header__menu-link">درباره ما</a>
         </li>
 
         <!-- آیتم تماس با ما -->
         <li class="header__menu-item rounded-full py-1">
-          <a href="#" class="header__menu-link">تماس با ما</a>
+          <a href="contactUs.html" class="header__menu-link">تماس با ما</a>
         </li>
       </ul>
 
       <!-- دکمه ثبت نام/ورود -->
       <div class="header__auth bg-[var(--primaryColor)] text-white py-2.5 px-3 rounded">
-        <a href="" class="header__auth-link flex items-center gap-1">
+        <a href="login.html" class="header__auth-link flex items-center gap-1">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
           </svg>
@@ -116,11 +118,49 @@
 
     </nav>
 
+    <!-- Mobile and desktop navbar -->
+    <nav class="header__nav  md:hidden flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+    
+      <div class="burgerMenu-open bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+        <svg class="w-10 h-10">
+          <use href="#burger-menu"></use>
+        </svg>
+      </div>
+        
+      <!-- لوگوی سایت -->
+      <a href="/index.html" class="header__logo font-semibold text-3xl text-[var(--primaryColor)]">OnKar</a>
+
+
+      <!-- دکمه ثبت نام/ورود -->
+      <a href="#" class="bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+        <svg class="w-10 h-10">
+          <use href="#register"></use>
+        </svg>
+      </a>
+
+    </nav>
+
+    <!-- mobile menu links -->
+    <div class="mobileMenu bg-white shadow w-[303px] py-5 px-3 fixed top-0 right-0 bottom-0 translate-x-full  transition-all ease-in-out duration-150 delay-75">
+      <div class="flex items-center justify-between">
+
+        <div class="burgerMenu-close bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+          <svg class="w-10 h-10">
+            <use href="#x-marc"></use>
+          </svg>
+        </div>
+
+        <a href="/index.html" class="header__logo font-semibold text-3xl text-[var(--primaryColor)]">OnKar</a>
+        
+      </div>
+    </div>
+
+
   </header>
   <!-- Header section -->
 
-  <main class="container">
-
+  <main class="container my-11">
+    <h1 class="text-center pt-3 pb-7 text-5xl">تماس با ما</h1>
   </main>
 
   <!-- Footer section -->

@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <title>بلاگ | آن کار</title>
+  <title>مقاله تکی | آن کار</title>
 </head> 
 <body>
 
-  <!-- Header section -->
+    <!-- Header section -->
   <header class="header hero flex-col justify-center">
-    <nav class="header__nav flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
-
+    <!-- Tablet and desktop navbar -->
+    <nav class="header__nav hidden md:flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+        
       <!-- لوگوی سایت -->
       <a href="/index.html" class="header__logo font-black text-2xl text-[var(--primaryColor)]">OnKar</a>
 
@@ -21,7 +21,7 @@
 
         <!-- آیتم خانه -->
         <li class="header__menu-item rounded-full text-[var(--primaryColor)]">
-          <a href="index.html" class="header__menu-link">خانه</a>
+          <a href="/" class="header__menu-link">خانه</a>
         </li>
 
         <!-- آیتم سرویس‌ها با زیرمنو -->
@@ -34,7 +34,7 @@
           </a>
 
           <!-- زیرمنو سرویس‌ها: پاپ‌آپ -->
-          <div class="dropdown__item header__submenu absolute bg-white top-18 w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
+          <div class="dropdown__item header__submenu absolute bg-white top-18 max-w-[777px] h-[222px] rounded shadow-Main p-2 mx-auto left-0 right-0">
             <div class="header__submenu-content flex justify-between items-center h-full gap-2">
 
               <!-- بخش تماس با ما -->
@@ -117,11 +117,46 @@
 
     </nav>
 
+    <!-- Mobile and desktop navbar -->
+    <nav class="header__nav  md:hidden flex items-center shadow-md container mt-7 rounded h-20 bg-white w-[97%] justify-between relative">
+    
+      <div class="burgerMenu-open bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+        <svg class="w-10 h-10">
+          <use href="#burger-menu"></use>
+        </svg>
+      </div>
+        
+      <!-- لوگوی سایت -->
+      <a href="/index.html" class="header__logo font-semibold text-3xl text-[var(--primaryColor)]">OnKar</a>
+
+
+      <!-- دکمه ثبت نام/ورود -->
+      <a href="#" class="bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+        <svg class="w-10 h-10">
+          <use href="#register"></use>
+        </svg>
+      </a>
+
+    </nav>
+    <!-- mobile menu links -->
+    <div class="mobileMenu bg-white shadow w-[303px] py-5 px-3 fixed top-0 right-0 bottom-0 translate-x-full  transition-all ease-in-out duration-150 delay-75">
+      <div class="flex items-center justify-between">
+
+        <div class="burgerMenu-close bg-gray-100 hover:bg-white border border-gray-200 rounded-full p-1.5 cursor-pointer">
+          <svg class="w-10 h-10">
+            <use href="#x-marc"></use>
+          </svg>
+        </div>
+
+        <a href="/index.html" class="header__logo font-semibold text-3xl text-[var(--primaryColor)]">OnKar</a>
+        
+      </div>
+    </div>
   </header>
   <!-- Header section -->
 
-  <main class="container">
-
+  <main class="container my-11">
+    <h1 class="text-center pt-3 pb-7 text-5xl"> عنوان مقاله </h1>
   </main>
 
   <!-- Footer section -->
@@ -212,32 +247,6 @@
   <!-- Footer section -->
 
   <script src="assets/js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 5,
-    spaceBetween: 22,
-    loop: true,
-    navigation: {
-      nextEl: '.my-swiper-next',
-      prevEl: '.my-swiper-prev',
-    },
-    breakpoints: {
-      1024: {
-        slidesPerView: 5,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  });
-</script>
 
 </body>
 </html>
